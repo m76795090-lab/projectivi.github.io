@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .login-card h2 {
+            color: #0a385f;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: right;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .btn-login {
+            background-color: #0a385f;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #0d4a7d;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .footer-links a {
+            color: #0a385f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h2>ورود به حساب کاربری</h2>
+        
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="username">نام کاربری یا ایمیل</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">رمز عبور</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn-login">ورود</button>
+        </form>
+
+        <div class="footer-links">
+            <p>حساب کاربری ندارید؟ <a href="#">ثبت‌نام کنید</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

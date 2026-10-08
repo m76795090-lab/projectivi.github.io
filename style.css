@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: diji;
+  src: url(./src/Dirooz-FD.ttf);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: #0a385f;
+  font-family: diji;
+}
+
+.task-bar ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 21px;
+}
+
+.task-bar img {
+  vertical-align: middle;
+  margin: 0 150px 0 150px;
+  text-align: center;
+}
+
+.task-bar {
+  background-color: #051c30;
+  position: fixed;
+}
+
+.task-bar ul li {
+  display: inline-block;
+  padding: 30px;
+}
+
+.ul-menu {
+  display: flex;
+}
+
+.task-bar ul {
+  display: inline-block;
+}
+.header h3 {
+  color: white;
+  text-align: center;
+}
+.header {
+  position: relative;
+}
+
+.search-container {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 5px 15px;
+  width: 400px;
+  transition: all 0.3s;
+}
+
+/* افکت وقتی کاربر روی باکس کلیک می‌کند */
+.search-box:hover,
+.search-box:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  height: 34px;
+  width: 100%;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.nav-item {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.pictur-school {
+  padding-top: 96px;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.character-box {
+  width: 1400px;
+  margin: 20px 0 0 38px;
+}
+
+.characters {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+  border: solid 1px rgb(119, 119, 119);
+  margin-left: 25px;
+  border-radius: 10px;
+  vertical-align: middle;
+  transition: ease 1s color;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  box-shadow: #000 10px 10px 10px;
+}
+
+.characters a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 30px 0 0 50px;
+}
+
+.characters a img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+.characters:hover {
+  background-color: #f8f9fb46;
+}
+
+.characters:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.characters:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.characters:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.characters:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.characters:nth-child(5) {
+  animation-delay: 0.9s;
+}
+.characters:nth-child(6) {
+  animation-delay: 1.1s;
+}
+
+.nav-item {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.nav-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.nav-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav-item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.search-box {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.task-bar {
+  z-index: 1000;
+  width: 100%;
+}
+
+.school-typography {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.characters a h2 {
+  background-color: #0077185f;
+  margin-top: 10px;
+  border-radius: 5%;
+}
+
+.role-personel {
+  border: solid 1px rgb(97, 97, 97);
+  width: 1365px;
+  height: 300px;
+  margin: 30px 0 30px 57px;
+  border-radius: 20px;
+  background-color: #00c8f024;
+  box-shadow: #000 10px 10px 10px;
+}
+
+.role-personel h3 {
+  color: #fff;
+  margin: 10px 20px 0 1100px;
+  display: inline-block;
+  text-align: right;
+}
+.role-personel a {
+  color: #fff;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 10px 0 0 20px;
+  background-color: #0cf5b352;
+  border-radius: 20px;
+}
